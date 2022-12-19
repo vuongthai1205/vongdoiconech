@@ -18,12 +18,12 @@ const data = [
 ];
 
 const data1 = [
+    'echtruongthanh',
     'trung',
     'nongnoc',
     'nongnocduoi',
     'echduoi',
     'echduoingan',
-    'echtruongthanh',
 ];
 
 let deviceType = '';
@@ -186,9 +186,17 @@ const creator = () => {
     for (let i of data1) {
         const countryDiv = document.createElement('div');
         countryDiv.classList.add('col-2');
+        countryDiv.classList.add('countries-container');
 
         countryDiv.innerHTML = `<div class='countries' data-id='${i}'>
-    
+        
+        
+    </div>
+    <div class='muiten'>
+        <img src='./muiten.png'/>
+    </div>
+    <div class='muiten1' >
+        <img src='./muiten1.png'/>
     </div>
     `;
         dropContainer.appendChild(countryDiv);

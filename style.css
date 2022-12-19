@@ -1,3 +1,6 @@
+:root{
+  --width-muiten: calc(1190 * 90%)
+}
 * {
   padding: 0;
   margin: 0;
@@ -41,6 +44,9 @@ h3 {
 img {
   width: 11em;
   filter: drop-shadow(0 0.3em 0.9em rgba(0, 0, 0, 0.25));
+}
+.countries-container{
+  position: relative;
 }
 .countries {
   width: 10em;
@@ -88,4 +94,29 @@ img {
 #result{
   color: red;
   font-weight: bold;
+}
+.muiten{
+  position: absolute;
+  top: 50%;
+  right: -21px;
+  transform: translateY(-50%);
+}
+.countries-container:last-child .muiten{
+  display: none;
+}
+.countries-container .muiten1{
+  position: absolute;
+  display: none;
+}
+.countries-container:last-child .muiten1{
+  display: block;
+    position: absolute;
+    bottom: 95%;
+    right: 71px;
+}
+.countries-container:last-child .muiten1 img{
+  width: 46em;
+}
+.muiten img{
+  width: 50px;
 }
