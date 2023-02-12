@@ -66,6 +66,7 @@ function dragStart(e) {
         //Start movement for touch
         moveElement = true;
         currentElement = e.target;
+        console.log(initialX);
     } else {
         //For non touch devices set data to be transfered
         e.dataTransfer.setData('text', e.target.id);
@@ -93,7 +94,7 @@ const touchMove = (e) => {
             (initialX - newX) +
             'px';
         initialX = newX;
-        initialY - newY;
+        initialY = newY;
     }
 };
 
@@ -174,6 +175,8 @@ const creator = () => {
         const flagDiv = document.createElement('div');
         flagDiv.classList.add('draggable-image');
         flagDiv.classList.add('col-3');
+        flagDiv.classList.add('col-md-3');
+        flagDiv.classList.add('col-sm-4');
         flagDiv.setAttribute('draggable', true);
         if (isTouchDevice()) {
             flagDiv.style.position = 'absolute';

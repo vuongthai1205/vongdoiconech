@@ -30,6 +30,7 @@ h3 {
   letter-spacing: 0.03em;
   line-height: 1.8em;
   color: #010c39;
+  opacity: 0;
 }
 .draggable-objects,
 .drop-points {
@@ -40,6 +41,40 @@ h3 {
 .draggable-image {
   width: 11em;
   cursor: move;
+}
+.draggable-image:nth-child(1){
+  top: 0;
+  left: 0;
+}
+.draggable-image:nth-child(2){
+  top: 0;
+  left: 176px;
+}
+.draggable-image:nth-child(3){
+  top: 0;
+  left: calc(176px + 176px);
+}
+.draggable-image:nth-child(4){
+  top: 0;
+  left: calc(176px + 176px + 176px);
+}
+.draggable-image:nth-child(5){
+  top: 0;
+  left: calc(176px + 176px + 176px + 176px);
+}
+.draggable-image:nth-child(6){
+  top: 0;
+  left: calc(176px + 176px + 176px + 176px + 176px);
+}
+.draggable-image:nth-child(7){
+  top: -165px;
+  left: calc(176px);
+
+}
+.draggable-image:nth-child(8){
+  top: -165px;
+    left: 0;
+
 }
 img {
   width: 11em;
@@ -87,6 +122,7 @@ img {
   color: #ffffff;
   font-size: 2em;
   margin-bottom: 1em;
+  background: azure;
 }
 .hide {
   display: none;
@@ -115,7 +151,7 @@ img {
     right: 71px;
 }
 .countries-container:last-child .muiten1 img{
-  width: 46em;
+  width: 53em;
 }
 .muiten img{
   width: 2em;
